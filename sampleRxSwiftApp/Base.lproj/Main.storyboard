@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleRxSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-ty-hHl">
+                                <rect key="frame" x="125" y="162.5" width="125" height="62.5"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FYW-ty-hHl" secondAttribute="height" multiplier="2:1" id="u2s-Pa-8p5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOl-VC-5qv">
+                                <rect key="frame" x="125" y="275" width="125" height="62"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqH-ci-iUf">
+                                <rect key="frame" x="125" y="50" width="125" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZOl-VC-5qv" firstAttribute="width" secondItem="FYW-ty-hHl" secondAttribute="width" id="2tj-Ku-CcQ"/>
+                            <constraint firstItem="oqH-ci-iUf" firstAttribute="height" secondItem="FYW-ty-hHl" secondAttribute="height" id="7oz-ff-VK8"/>
+                            <constraint firstItem="ZOl-VC-5qv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PeV-FD-Dig"/>
+                            <constraint firstItem="oqH-ci-iUf" firstAttribute="width" secondItem="FYW-ty-hHl" secondAttribute="width" id="R3g-6z-c96"/>
+                            <constraint firstItem="oqH-ci-iUf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="RTJ-Fb-cmD"/>
+                            <constraint firstItem="FYW-ty-hHl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="TL5-bH-088"/>
+                            <constraint firstItem="FYW-ty-hHl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2h-jh-dUC"/>
+                            <constraint firstItem="ZOl-VC-5qv" firstAttribute="height" secondItem="FYW-ty-hHl" secondAttribute="height" id="bC1-mu-n2p"/>
+                            <constraint firstItem="oqH-ci-iUf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faO-G6-28X"/>
+                            <constraint firstItem="FYW-ty-hHl" firstAttribute="top" secondItem="oqH-ci-iUf" secondAttribute="bottom" constant="50" id="wE7-Ql-EmC"/>
+                            <constraint firstItem="ZOl-VC-5qv" firstAttribute="top" secondItem="FYW-ty-hHl" secondAttribute="bottom" constant="50" id="ycX-Te-ZOo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="FYW-ty-hHl" id="o8u-SM-ks8"/>
+                        <outlet property="textField" destination="ZOl-VC-5qv" id="Aa2-Kt-tj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
